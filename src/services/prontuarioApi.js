@@ -20,5 +20,3 @@ export const examesApi = {
   create: (animalId, data) => http.post(path(`/animais/${animalId}/exames`), data),
   list: (animalId) => http.get(path(`/animais/${animalId}/exames`)),
 };
-
-

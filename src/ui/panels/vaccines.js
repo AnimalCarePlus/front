@@ -66,7 +66,6 @@ function field(labelText, inputEl) {
   label.className = 'label';
   label.textContent = labelText;
   wrap.append(label, inputEl);
-  // Facilitar acesso ao value como se fosse o input
   return new Proxy(inputEl, { get: (t, p) => (p === 'wrapper' ? wrap : t[p]) });
 }
 function button(text, onClick) {

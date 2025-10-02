@@ -11,5 +11,3 @@ export const agendamentoApi = {
   disponibilidade: (veterinarioId, dataIsoDate) =>
     http.get(path(`/consultas/disponibilidade?veterinarioId=${encodeURIComponent(veterinarioId)}&data=${encodeURIComponent(dataIsoDate)}`)),
 };
-
-

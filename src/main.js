@@ -8,5 +8,3 @@ configureApis({
 });
 
 createApp(document.getElementById('app'));
-
-

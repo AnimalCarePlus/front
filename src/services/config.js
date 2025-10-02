@@ -11,5 +11,3 @@ export function configureApis(config) {
 export function getApiConfig() {
   return API_CONFIG;
 }
-
-

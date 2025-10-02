@@ -4,10 +4,10 @@ import { getApiConfig } from './config.js';
 const path = (p) => `${getApiConfig().vacinasBaseUrl}${p}`;
 
 export const vaccinesApi = {
-  list: () => http.get(path('/vaccines')),
-  create: (data) => http.post(path('/vaccines'), data),
-  update: (id, data) => http.put(path(`/vaccines/${id}`), data),
-  remove: (id) => http.del(path(`/vaccines/${id}`)),
+  list: () => http.get(path('/vacinas')),           
+  create: (data) => http.post(path('/vacinas'), data),
+  update: (id, data) => http.put(path(`/vacinas/${id}`), data),
+  remove: (id) => http.del(path(`/vacinas/${id}`)),
 };
 
 export const stockApi = {
@@ -22,5 +22,3 @@ export const stockApi = {
 export const applicationsApi = {
   apply: (payload) => http.post(path('/applications/apply'), payload),
 };
-
-
